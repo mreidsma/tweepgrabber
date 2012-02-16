@@ -1,0 +1,41 @@
+#README - Tweepgrabber
+
+---
+
+This tool was developed by Matthew Reidsma in HTML, PHP, and Javascript to make conducting research on Twitter followers easier. We hope you find it useful.
+
+While doing research on the difference between perception and reality in University Libraries' Twitter followers, Grand Valley State University Librarians Abby Bedford and Matthew Reidsma needed a quick tool to grab Twitter followers for specific users on one screen. The result is Tweepgrabber. It’s real power lies in the ability to parse Twitter bios for keywords and automatically code those users into groups. 
+
+INSTALLATION
+
+Open index.php in a text editor (NOT Microsoft Word! Use Notepad if you have nothing else). On line number #37, replace the string "$searches = "...";  with a string of your own keywords you'd like to look for in Twitter bios. The format for this string is as follows: keyword + pipe symbol "|" + code + comma "," + keyword + pipe symbol "|" + code + comma "," etc...
+
+Example:
+
+If I want to code all followers with the words "librarian" and "library" as "4", and I want to code all followers with "undergrad*" as "1", I would use the following syntax: 
+
+$searches = ""librarian|4,library|4,professor|2,undergrad|1";
+
+You don't have to use integers for your code. Strings are just fine.
+
+Now, copy the files to your computer or a Web server and open the "index.php" file. Enter the name of a twitter user and click "Get Followers." You'll see a complete list of these followers, along with bios and codes (if any keywords were present in the bio). Click the "Select All" button and all the data in the table is selected. Hit Ctrl-C (or Cmd-C on a Mac) to copy the data and you can now paste it into your favorite spreadsheet application. (This doesn't really work in Webkit browsers - Safari and Chrome. Try Firefox.)
+
+More questions? Feel free to contact Matthew Reidsma on Twitter at @mreidsma or via email at reidsmam@gvsu.edu.
+
+DEMO
+
+You can view a live version of this tool at http://matthewreidsma.com/projects/tweeps.
+
+FONTS
+
+I'm using the excellent League Gothic from The League of Moveable Type for the heading font on this tool. League Gothic is released under the Open Type License (a copy is included in the fonts/ folder). More info on League Gothic can be found here: http://www.theleagueofmoveabletype.com/league-gothic
+
+COPYRIGHT
+
+This tool is copyright 2011 Matthew Reidsma. 
+
+This tool is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This tool is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this tool. If not, see <http://www.gnu.org/licenses/>.
